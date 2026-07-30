@@ -59,7 +59,7 @@ Personaje* duelo(Personaje* c1, Personaje* c2) {
         c1->imprimir();
         limite--;
     }
-    if (c1->getSalud() >= c2->getSalud()) {
+    if (*c1 > *c2 || c1->getSalud() == c2->getSalud()) {
         return c1;
     } else {
         return c2;
